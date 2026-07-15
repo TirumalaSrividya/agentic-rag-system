@@ -52,131 +52,26 @@ agentic-rag/
 ```
 
 ## High Level Architecture
-```
 
-                               +-------------------------------+
-                               |      Runtime Configuration    |
-                               +-------------------------------+
-                               |                               |Topic                           |
-                               Chunksize                        Chunk Overlap                   |
-                               Top K Retreival                 |
-                               Token Budget                    |
-                               RetentionDays                   ||------------------------------| 
-                                                |
-                                                |
-                                    Manual Search Trigger
-                                                |
-                                                ▼
-========================================================================================
-                           DAILY INGESTION PIPELINE
-========================================================================================
+Ingestion Pipeline 
 
-                +-------------------------+
-                |     Search Agent        |
-                |-------------------------|
-                | • Generate 5–10 Queries |
-                | • Search Latest Articles|
-                | • Rank & Deduplicate    |
-                +------------+------------+
-                             |
-                             ▼
-                +-------------------------+
-                |      Search Tool        |
-                |-------------------------|
-                | • Web Search            |
-                | • Fetch URLs            |
-                +------------+------------+
-                             |
-                             ▼
-                +-------------------------+
-                |     Scraper Tool        |
-                |-------------------------|
-                | • Extract Article       |
-                | • Published Date        |
-                | • Content               |
-                | • Relevance Filter      |
-                | • Skip Failed URLs      |
-                +------------+------------+
-                             |
-                             ▼
-                +-------------------------+
-                |     VectorDB Agent      |
-                |-------------------------|
-                | • Chunk Documents       |
-                | • Generate Embeddings   |
-                | • Deduplicate Chunks    |
-                | • Apply Retention       |
-                | • Store Metadata        |
-                +------------+------------+
-                             |
-                +------------+------------+
-                |                         |
-                ▼                         ▼
-     +--------------------+    +----------------------+
-     | ChromaDB           |    | Daily JSON Report    |
-     | Vector Store       |    | Ingestion Report     |
-     +--------------------+    +----------------------+
+<img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/cdb331ea-2692-4c65-889f-d3c03c9d9041" />
 
-========================================================================================
-                      CONVERSATIONAL RAG PIPELINE
-========================================================================================
+Conversational Pipeline 
 
-                    User Query
-                         |
-                         ▼
-               +----------------------+
-               |     Streamlit UI     |
-               +----------+-----------+
-                          |
-                          ▼
-               +----------------------+
-               | Conversational       |
-               | RAG Agent            |
-               +----------+-----------+
-                          |
-                          ▼
-               +----------------------+
-               | ChromaDB             |
-               | Retrieve Top-K       |
-               +----------+-----------+
-                          |
-                Retrieved Documents
-                          |
-                 Re-ranking & Memory
-                          |
-                Prompt Construction
-                          |
-                          ▼
-               +----------------------+
-               | Ollama (Llama 3.2)   |
-               +----------+-----------+
-                          |
-                          ▼
-              Grounded Response
-              + Inline Citations
-```
+<img width="1440" height="1120" alt="image" src="https://github.com/user-attachments/assets/3ae919d7-983d-4707-a393-b5fd60f63d2e" />
 
-## SET UP
+
+## Set Up
 
 ## 1. Clone Repository
 ```
 git clone <repo_url>
 cd Agentic_Rag
 ```
-## 2. Create Virtual Environment
 
-## Windows
-```
-python -m venv .venv
-.venv\Scripts\activate
-```
-## Linux / macOS
-```
-python3 -m venv .venv
-source .venv/bin/activate
-```
 
-## 3. Install dependencies
+## 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -184,7 +79,7 @@ pip install ddgs   # your search.py imports this but it wasn't in requirements.t
 ```
 
 
-## 4. Start Ollama locally
+## 3. Start Ollama locally
 
 ```bash
 ollama serve
@@ -192,14 +87,14 @@ ollama pull llama3.2
 ```
 
 
-## 5. Run the ingestion pipeline once, manually
+## 4. Run the ingestion pipeline once, manually
 
 ```bash
 python ingestion.py 
 ```
 
 
-## 6. Launch the chat interface
+## 5. Launch the chat interface
 
 ```bash
 streamlit run app.py
