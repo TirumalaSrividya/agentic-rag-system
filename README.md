@@ -2,7 +2,7 @@
 
 This project implements an Agentic Retrieval-Augmented Generation system that automatically discovers, filters, and ingests the latest web content into a ChromaDB vector database using AI agents.
 
-It provides a conversational interface powered by Ollama  enabling users to ask questions and receive context-aware, grounded responses with source citations based on the continuously updated knowledge base.
+It provides a conversational interface powered by Ollama enabling users to ask questions and receive context-aware, responses with source citations based on the continuously updated knowledge base.
 
 ## Project Folder Structure
 ```
@@ -68,7 +68,7 @@ Conversational Pipeline
 
 ## 1. Clone Repository
 ```
-git clone <repo_url>
+git clone https://github.com/TirumalaSrividya/agentic-rag-system
 cd Agentic_Rag
 ```
 
