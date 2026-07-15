@@ -1,8 +1,8 @@
 ## Agentic RAG with Scheduled Web Intelligence & Conversational Interface 
 
-This project implements an Agentic Retrieval-Augmented Generation system that automatically discovers, filters, and ingests the latest web content into a ChromaDB vector database using AI agents.
+- This project implements an Agentic Retrieval-Augmented Generation system that automatically discovers, filters, and ingests the latest web content into a ChromaDB vector   database using AI agents.
 
-It provides a conversational interface powered by Ollama enabling users to ask questions and receive context-aware, responses with source citations based on the continuously updated knowledge base.
+- It provides a conversational interface powered by Ollama enabling users to ask questions and receive context-aware, responses with source citations based on the         continuously updated knowledge base.
 
 ## Folder Structure
 ```
