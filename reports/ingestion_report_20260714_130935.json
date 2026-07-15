@@ -1,0 +1,32 @@
+{
+  "topic": "Advancements in AI in the medical field",
+  "started_at": "2026-07-14T13:09:35.604322",
+  "finished_at": "2026-07-14T13:10:45.932995",
+  "duration_seconds": 70.328673,
+  "urls_found": 10,
+  "urls_scraped_ok": 5,
+  "urls_failed": [
+    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9428734/",
+    "https://www.linkedin.com/pulse/artificial-intelligence-medical-imaging-0oi1f",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC11144045/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC10445506/"
+  ],
+  "urls_filtered_stale": [
+    "https://www.labellerr.com/blog/computer-vision-in-telemedicine-for-enhanced-healthcare-delivery/"
+  ],
+  "urls_filtered_irrelevant": [],
+  "recency_days": 14,
+  "min_relevance_keyword_overlap": 0.08,
+  "token_budget": 20000,
+  "token_budget_used_approx": 13894,
+  "token_budget_exhausted": false,
+  "indexing": {
+    "documents_processed": 5,
+    "documents_skipped_empty_or_short": 0,
+    "chunks_seen": 29,
+    "chunks_added": 29,
+    "chunks_deduped": 0,
+    "chunks_purged_retention": 0,
+    "total_chunks_in_db": 29
+  }
+}

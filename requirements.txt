@@ -1,0 +1,10 @@
+streamlit
+chromadb
+sentence-transformers
+apscheduler
+ollama
+ddgs
+requests
+beautifulsoup4
+python-dotenv
+pytest
