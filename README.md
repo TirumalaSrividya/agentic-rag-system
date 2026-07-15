@@ -66,37 +66,33 @@ Conversational Pipeline
 
 ## Set Up
 
-## 1. Clone Repository
+Clone Repository
 ```
-git clone https://github.com/TirumalaSrividya/agentic-rag-system
+git clone https://github.com/TirumalaSrividya/agentic-rag-system.git
 cd agentic-rag-system
 ```
 
-
-## 2. Install dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 pip install ddgs   # your search.py imports this but it wasn't in requirements.txt
 ```
 
-
-## 3. Start Ollama locally
+Start Ollama locally
 
 ```bash
 ollama serve
 ollama pull llama3.2
 ```
 
-
-## 4. Run the ingestion pipeline once, manually
+Run the ingestion pipeline once, manually
 
 ```bash
 python ingestion.py 
 ```
 
-
-## 5. Launch the chat interface
+Launch the chat interface
 
 ```bash
 streamlit run app.py
