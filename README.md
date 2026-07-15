@@ -55,12 +55,12 @@ agentic-rag/
 
 Ingestion Pipeline 
 
-<img width="1440" height="1140" alt="image" src="https://github.com/user-attachments/assets/87eba671-e979-4bc5-97de-7349a4d155e3" />
+<img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/87eba671-e979-4bc5-97de-7349a4d155e3" />
 
 
 Conversational Pipeline 
 
-<img width="1440" height="1160" alt="image" src="https://github.com/user-attachments/assets/018e285b-5f8c-48ff-9198-e7bc3d8f2320" />
+<img width="800" height="900" alt="image" src="https://github.com/user-attachments/assets/018e285b-5f8c-48ff-9198-e7bc3d8f2320" />
 
 
 
