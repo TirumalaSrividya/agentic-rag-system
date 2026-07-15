@@ -4,7 +4,7 @@ This project implements an Agentic Retrieval-Augmented Generation system that au
 
 It provides a conversational interface powered by Ollama enabling users to ask questions and receive context-aware, responses with source citations based on the continuously updated knowledge base.
 
-## Project Folder Structure
+## Folder Structure
 ```
 agentic-rag/
 │
