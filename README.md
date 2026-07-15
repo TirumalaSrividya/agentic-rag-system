@@ -69,7 +69,7 @@ Conversational Pipeline
 ## 1. Clone Repository
 ```
 git clone https://github.com/TirumalaSrividya/agentic-rag-system
-cd Agentic_Rag
+cd agentic-rag
 ```
 
 
