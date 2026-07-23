@@ -100,7 +100,8 @@ streamlit run app.py
 or 
 
 open at 
-``` local URL: http://localhost:8501
+```
+local url :  http://localhost:8501
 ``` 
 
 
