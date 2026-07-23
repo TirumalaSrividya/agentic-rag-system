@@ -97,6 +97,12 @@ Launch the chat interface
 ```bash
 streamlit run app.py
 ```
+or 
+
+open at 
+``` local URL: http://localhost:8501
+``` 
+
 
 
 
